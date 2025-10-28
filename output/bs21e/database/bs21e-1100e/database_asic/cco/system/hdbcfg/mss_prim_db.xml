@@ -1,0 +1,376 @@
+<MSS>
+    <SUBSYSTEM NAME="bt_core" DATA_STRUCT_FILE="..\diag\prot_core_hso_msg_struct_def.txt" DESCRIPTION="" MULTIMODE="bt_core">
+        <MSG_LOG>
+        </MSG_LOG>
+        <LAYER_LOG>
+        </LAYER_LOG>
+        <USERPLANE_LOG>
+        </USERPLANE_LOG>
+    </SUBSYSTEM>
+    <SUBSYSTEM NAME="bt_status" DATA_STRUCT_FILE="..\diag\bt_status_hso_msg_struct_def.txt" DESCRIPTION="" MULTIMODE="bt_status">
+        <MSG_LOG><MSG STRUCTURE="bt_status_msg_id_100" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f0100" />
+			<MSG STRUCTURE="bt_status_msg_id_101" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f0101" />
+			<MSG STRUCTURE="bt_status_msg_id_102" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f0102" />
+			<MSG STRUCTURE="bt_status_msg_id_103" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f0103" />
+			<MSG STRUCTURE="bt_status_msg_id_104" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f0104" />
+			<MSG STRUCTURE="bt_status_msg_id_106" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f0106" />
+			<MSG STRUCTURE="bt_status_msg_id_107" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f0107" />
+			<MSG STRUCTURE="bt_status_msg_id_10b" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f010b" />
+			<MSG STRUCTURE="bt_status_msg_id_10c" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f010c" />
+			<MSG STRUCTURE="bt_status_msg_id_10d" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f010d" />
+			<MSG STRUCTURE="bt_status_msg_id_10e" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f010e" />
+			<MSG STRUCTURE="bt_status_msg_id_180" NAME="%s;----&gt;%s; send sed_id=%d; HCI_COMMAND_COMPLETE,  %s" ID="0x1f0180" />
+			<MSG STRUCTURE="bt_status_msg_id_181" NAME="%s;----&gt;%s; send sed_id=%d; HCI_COMMAND_STATUS,  %s" ID="0x1f0181" />
+			<MSG STRUCTURE="bt_status_msg_id_182" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f0182" />
+			<MSG STRUCTURE="bt_status_msg_id_183" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f0183" />
+			<MSG STRUCTURE="bt_status_msg_id_184" NAME="%s;----&gt;%s; send sed_id=%d; LL_UNKNOWN_RSP,  %s" ID="0x1f0184" />
+			<MSG STRUCTURE="bt_status_msg_id_185" NAME="%s;----&gt;%s; send sed_id=%d; LL_REJECT_EXT_IND,  %s" ID="0x1f0185" />
+			<MSG STRUCTURE="bt_status_msg_id_186" NAME="%s;----&gt;%s; send sed_id=%d; HCI_GLE_COMMAND_COMPLETE,  %s" ID="0x1f0186" />
+			<MSG STRUCTURE="bt_status_msg_id_187" NAME="%s;----&gt;%s; send sed_id=%d; HCI_GLE_COMMAND_STATUS,  %s" ID="0x1f0187" />
+			<MSG STRUCTURE="bt_status_msg_id_188" NAME="%s;----&gt;%s; send sed_id=%d; %s" ID="0x1f0188" />
+			<MSG STRUCTURE="bt_status_msg_id_189" NAME="%s;----&gt;%s; send sed_id=%d; GLE_LL_UNKNOWN_RSP,  %s" ID="0x1f0189" />
+			<MSG STRUCTURE="bt_status_msg_id_18a" NAME="%s;----&gt;%s; send sed_id=%d; GLE_LL_REJECT_IND,  %s" ID="0x1f018a" />
+			<MSG STRUCTURE="bt_status_msg_id_200" NAME="%s;----&gt;%s; forward sed_id=%d; %s" ID="0x1f0200" />
+			<MSG STRUCTURE="bt_status_msg_id_201" NAME="%s;----&gt;%s; forward sed_id=%d; %s" ID="0x1f0201" />
+			<MSG STRUCTURE="bt_status_msg_id_202" NAME="%s;----&gt;%s; forward sed_id=%d; %s" ID="0x1f0202" />
+			<MSG STRUCTURE="bt_status_msg_id_203" NAME="%s;----&gt;%s; forward sed_id=%d; %s" ID="0x1f0203" />
+			<MSG STRUCTURE="bt_status_msg_id_204" NAME="%s;----&gt;%s; forward sed_id=%d; %s" ID="0x1f0204" />
+			<MSG STRUCTURE="bt_status_msg_id_206" NAME="%s;----&gt;%s; forward sed_id=%d; %s" ID="0x1f0206" />
+			<MSG STRUCTURE="bt_status_msg_id_207" NAME="%s;----&gt;%s; forward sed_id=%d; %s" ID="0x1f0207" />
+			<MSG STRUCTURE="bt_status_msg_id_20b" NAME="%s;----&gt;%s; forward sed_id=%d; %s" ID="0x1f020b" />
+			<MSG STRUCTURE="bt_status_msg_id_20c" NAME="%s;----&gt;%s; forward sed_id=%d; %s" ID="0x1f020c" />
+			<MSG STRUCTURE="bt_status_msg_id_20d" NAME="%s;----&gt;%s; forward sed_id=%d; %s" ID="0x1f020d" />
+			<MSG STRUCTURE="bt_status_msg_id_20e" NAME="%s;----&gt;%s; forward sed_id=%d; %s" ID="0x1f020e" />
+			<MSG STRUCTURE="bt_status_msg_id_300" NAME="%s; sed_id=%d; SAVED HEAD %s; linenum=%d" ID="0x1f0300" />
+			<MSG STRUCTURE="bt_status_msg_id_301" NAME="%s; sed_id=%d; SAVED HEAD %s; linenum=%d" ID="0x1f0301" />
+			<MSG STRUCTURE="bt_status_msg_id_302" NAME="%s; sed_id=%d; SAVED HEAD %s; linenum=%d" ID="0x1f0302" />
+			<MSG STRUCTURE="bt_status_msg_id_303" NAME="%s; sed_id=%d; SAVED HEAD %s; linenum=%d" ID="0x1f0303" />
+			<MSG STRUCTURE="bt_status_msg_id_304" NAME="%s; sed_id=%d; SAVED HEAD %s; linenum=%d" ID="0x1f0304" />
+			<MSG STRUCTURE="bt_status_msg_id_306" NAME="%s; sed_id=%d; SAVED HEAD %s; linenum=%d" ID="0x1f0306" />
+			<MSG STRUCTURE="bt_status_msg_id_307" NAME="%s; sed_id=%d; SAVED HEAD %s; linenum=%d" ID="0x1f0307" />
+			<MSG STRUCTURE="bt_status_msg_id_30b" NAME="%s; sed_id=%d; SAVED HEAD %s; linenum=%d" ID="0x1f030b" />
+			<MSG STRUCTURE="bt_status_msg_id_30c" NAME="%s; sed_id=%d; SAVED HEAD %s; linenum=%d" ID="0x1f030c" />
+			<MSG STRUCTURE="bt_status_msg_id_30d" NAME="%s; sed_id=%d; SAVED HEAD %s; linenum=%d" ID="0x1f030d" />
+			<MSG STRUCTURE="bt_status_msg_id_30e" NAME="%s; sed_id=%d; SAVED HEAD %s; linenum=%d" ID="0x1f030e" />
+			<MSG STRUCTURE="bt_status_msg_id_400" NAME="%s; sed_id=%d; SAVED TAIL %s; linenum=%d" ID="0x1f0400" />
+			<MSG STRUCTURE="bt_status_msg_id_401" NAME="%s; sed_id=%d; SAVED TAIL %s; linenum=%d" ID="0x1f0401" />
+			<MSG STRUCTURE="bt_status_msg_id_402" NAME="%s; sed_id=%d; SAVED TAIL %s; linenum=%d" ID="0x1f0402" />
+			<MSG STRUCTURE="bt_status_msg_id_403" NAME="%s; sed_id=%d; SAVED TAIL %s; linenum=%d" ID="0x1f0403" />
+			<MSG STRUCTURE="bt_status_msg_id_404" NAME="%s; sed_id=%d; SAVED TAIL %s; linenum=%d" ID="0x1f0404" />
+			<MSG STRUCTURE="bt_status_msg_id_406" NAME="%s; sed_id=%d; SAVED TAIL %s; linenum=%d" ID="0x1f0406" />
+			<MSG STRUCTURE="bt_status_msg_id_407" NAME="%s; sed_id=%d; SAVED TAIL %s; linenum=%d" ID="0x1f0407" />
+			<MSG STRUCTURE="bt_status_msg_id_40b" NAME="%s; sed_id=%d; SAVED TAIL %s; linenum=%d" ID="0x1f040b" />
+			<MSG STRUCTURE="bt_status_msg_id_40c" NAME="%s; sed_id=%d; SAVED TAIL %s; linenum=%d" ID="0x1f040c" />
+			<MSG STRUCTURE="bt_status_msg_id_40d" NAME="%s; sed_id=%d; SAVED TAIL %s; linenum=%d" ID="0x1f040d" />
+			<MSG STRUCTURE="bt_status_msg_id_40e" NAME="%s; sed_id=%d; SAVED TAIL %s; linenum=%d" ID="0x1f040e" />
+			<MSG STRUCTURE="bt_status_msg_id_801" NAME="%s; sed_id=%d; RESTORE HEAD file=%s; linenum=%d" ID="0x1f0801" />
+			<MSG STRUCTURE="bt_status_msg_id_802" NAME="%s; sed_id=%d; RESTORE TAIL file=%s; linenum=%d" ID="0x1f0802" />
+			<MSG STRUCTURE="bt_status_msg_id_810" NAME="%s; sed_id=%d; TRANS_STATE=%s; linenum=%d" ID="0x1f0810" />
+			</MSG_LOG><LAYER_LOG>
+        </LAYER_LOG>
+        <USERPLANE_LOG>
+        </USERPLANE_LOG>
+    </SUBSYSTEM>
+    <SUBSYSTEM NAME="acore" DATA_STRUCT_FILE="..\diag\prot_core_hso_msg_struct_def.txt" DESCRIPTION="" MULTIMODE="acore">
+        <MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="App main @app_os_init.c(236),INFO" ID="0xa0020765" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[Mcpu mips statistics] total work time: %dus, total idle time: %dus. @app_os_init.c(240),INFO" ID="0xa0020785" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[LOW_POWER]img download size:0x%x is not 4 byte aligned, type:%d @cpu_load.c(125),INFO" ID="0xa04e03ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[%d]core flash address[0x%x] translate int mcu flash. @cpu_load.c(267),INFO" ID="0xa04e085d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[%d]core flash address[0x%x] translate int mcu flash. @cpu_load.c(283),INFO" ID="0xa04e08dd" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="result = 0x%x, exc = 0x%x, pc = 0x%x, lr = 0x%x, sp = 0x%x @cpu_trace.c(160),INFO" ID="0xa0220505" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[INFO]:Change log level failed, message is %d @log.c(317),INFO" ID="0xa01409ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[INFO]:Change log level to %d @log.c(325),INFO" ID="0xa0140a2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[log_reader][header]length error, len = 0x%x @log_buffer_reader.c(248),ERROR" ID="0xa06607c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[log_reader][data]length error, len1 = 0x%x, len2 = 0x%x @log_buffer_reader.c(268),ERROR" ID="0xa0660862" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[log_reader][pointer]write_p=0x%x, read_p=0x%x, new_read_p=0x%x @log_buffer_reader.c(290),ERROR" ID="0xa0660912" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[INFO]:Start DFT with hook_type=%d @log_oam_msg.c(274),INFO" ID="0xa0080895" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[OML]recv oml msg type:%d, length:%d @log_oam_msg.c(529),INFO" ID="0xa008108d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="receive hci message succ! @log_oam_msg.c(559),INFO" ID="0xa008117d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[OML]recv hci msg length:%d @log_oam_msg.c(562),INFO" ID="0xa0081195" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[PF][DUMP INFO] stack point: 0x%x, stack address: 0x%x, stack size: 0x%x @log_oml_exception.c(437),ERROR" ID="0xa00a0daa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[log_uart]data error, r1=0x%x, len1=0x%x, r2=0x%x, len2=0x%x @log_uart.c(434),ERROR" ID="0xa0680d92" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[STACK] id:%d, top:0x%x, size:0x%x, task usage peak:0x%x, sp:0x%x @memory_info.c(59),INFO" ID="0xa06401dd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HEAP_STAT1] total:0x%x, used:0x%x, free:0x%x, usage waterline:0x%x @memory_info.c(79),INFO" ID="0xa064027d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[panic]id:%d,code:0x%x,call:0x%x @panic.c(158),ERROR" ID="0xa00e04f2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[panic]core:%d,pc:0x%x,lr:0x%x @panic.c(170),ERROR" ID="0xa00e0552" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="System Boot Normal @preserve.c(483),INFO" ID="0xa0460f1d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="System Boot Abnoraml, watchdog timeout @preserve.c(487),INFO" ID="0xa0460f3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="System Boot Panic @preserve.c(491),INFO" ID="0xa0460f5d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="System Boot Abnoraml, xip crash @preserve.c(496),INFO" ID="0xa0460f85" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="System Boot Abnoraml, hard fault crash @preserve.c(500),INFO" ID="0xa0460fa5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="System Power On @preserve.c(504),INFO" ID="0xa0460fc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="System Boot Abnoraml, other core crash @preserve.c(508),INFO" ID="0xa0460fe5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Unkown Sytem Boot Type:0x%x @preserve.c(512),INFO" ID="0xa0461005" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="System Reboot cause:0x%x , total reboot count:%u, exception reboot count:%u @preserve.c(524),INFO" ID="0xa0461065" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Exception reboot pc:0x%x , lr:%x @preserve.c(528),INFO" ID="0xa0461085" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="panic id:0x%x, panic code: 0x%x, panic caller: 0x%x @preserve.c(534),INFO" ID="0xa04610b5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="panic id:0x%x, panic code: 0x%x, panic caller: 0x%x @preserve.c(539),INFO" ID="0xa04610dd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bt exception reboot with pc:0x%x, lr: 0x%x @preserve.c(551),INFO" ID="0xa046113d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="app exception reboot pc:0x%x, lr: 0x%x @preserve.c(561),INFO" ID="0xa046118d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_upgrade_flag_flash_start_addr fail @upg_common.c(52),ERROR" ID="0xa06c01a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_alloc_and_get_upgrade_flag upg_malloc fail @upg_common.c(58),ERROR" ID="0xa06c01d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_alloc_and_get_upgrade_flag read flash fail @upg_common.c(64),ERROR" ID="0xa06c0202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] The read_offset is more than file size! @upg_common.c(203),ERROR" ID="0xa06c065a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] read_fota_pkg_data failed @upg_common.c(219),ERROR" ID="0xa06c06da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] statfs failed! Invalid argument! @upg_common.c(242),ERROR" ID="0xa06c0792" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] open %s fail! @upg_common.c(497),ERROR" ID="0xa06c0f8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] The read_offset is more than file size! @upg_common.c(502),ERROR" ID="0xa06c0fb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] seek file fail! @upg_common.c(511),ERROR" ID="0xa06c0ffa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] read file fail! @upg_common.c(520),ERROR" ID="0xa06c1042" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_flash_write upgrader flag fail. ret = 0x%x @upg_common.c(650),ERROR" ID="0xa06c1452" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] retry times all failed @upg_common.c(655),ERROR" ID="0xa06c147a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] write complete: 0x%x @upg_common.c(768),INFO" ID="0xa06c1805" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_flash_read flag fail @upg_common.c(795),ERROR" ID="0xa06c18da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg verify: anti rollback version_verify ok. image_id = 0x%x @upg_common.c(968),INFO" ID="0xa06c1e45" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_lzma_alloc failed!!! size = 0x%x @upg_lzmadec.c(28),ERROR" ID="0xa07000e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_encry_fota_pkt fail ret = 0x%x  @upg_lzmadec.c(225),ERROR" ID="0xa070070a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] lzmadec_decodetobuf fail ret = 0x%x.  @upg_lzmadec.c(249),ERROR" ID="0xa07007ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_lzma_write_image fail. @upg_lzmadec.c(260),ERROR" ID="0xa0700822" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_lzma_read_pkt_decry fail ret = 0x%x. @upg_lzmadec.c(282),ERROR" ID="0xa07008d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_lzma_decode_to_buf fail ret = 0x%x. @upg_lzmadec.c(289),ERROR" ID="0xa070090a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_malloc failure for requested size = 0x%x @upg_patch.c(53),ERROR" ID="0xa07201aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] fota_pkg_flash_read_image read flash error. ret = 0x%x @upg_patch.c(92),ERROR" ID="0xa07202e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[UPG] cache_init: flash_offset = 0x%x, len = 0x%x @upg_patch.c(128),INFO" ID="0xa0720405" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] cache_init: desc-&gt;image_cache = 0x%x @upg_patch.c(131),INFO" ID="0xa072041d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] cache_init: malloc failure @upg_patch.c(133),ERROR" ID="0xa072042a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] read diff to ram error @upg_patch.c(169),ERROR" ID="0xa072054a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] z-&gt;cdata alloc failure, err_code = 0x%x @upg_patch.c(187),ERROR" ID="0xa07205da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] zip_init_helper Decode the properties from the header false! @upg_patch.c(197),ERROR" ID="0xa072062a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] zip_init_helper LzmaDec_Allocate is false! @upg_patch.c(205),ERROR" ID="0xa072066a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] zip_init z alloc failure, err_code = 0x%x @upg_patch.c(226),ERROR" ID="0xa0720712" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] zip_init z-&gt;dec alloc failure, err_code = 0x%x @upg_patch.c(235),ERROR" ID="0xa072075a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] LZMA zip_mem_read: read diff error, err_code = 0x%x @upg_patch.c(261),ERROR" ID="0xa072082a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] LZMA zip_mem_read: Decode error, err_code = 0x%x @upg_patch.c(270),ERROR" ID="0xa0720872" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] read_image_block state err_code = 0x%x @upg_patch.c(299),ERROR" ID="0xa072095a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] ERROR read_image_block, err_code = 0x%x @upg_patch.c(307),ERROR" ID="0xa072099a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] write_image_block state err_code = 0x%x @upg_patch.c(315),ERROR" ID="0xa07209da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] write_image_block write err_code = 0x%x @upg_patch.c(323),ERROR" ID="0xa0720a1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] fota_buffers_has_contents state err_code = 0x%x @upg_patch.c(345),ERROR" ID="0xa0720aca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] fota_buffers_has_contents: cannot allocate read buffer, err_code = 0x%x @upg_patch.c(353),ERROR" ID="0xa0720b0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] fota_buffers_has_contents: cannot read buffers, err_code = 0x%x @upg_patch.c(360),ERROR" ID="0xa0720b42" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[UPG] fota_buffers_has_contents: buffers are not erased  i = %d, val = 0x%x @upg_patch.c(368),ERROR" ID="0xa0720b82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] read_page_buffer state err_code = 0x%x @upg_patch.c(383),ERROR" ID="0xa0720bfa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] read_page_buffer: cannot read buffer, err_code = 0x%x @upg_patch.c(390),ERROR" ID="0xa0720c32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] replace_page_buffer state err_code = 0x%x @upg_patch.c(398),ERROR" ID="0xa0720c72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] replace_page_buffer: cannot write buffer, err_code = 0x%x @upg_patch.c(405),ERROR" ID="0xa0720caa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] read_page_status state err_code = 0x%x @upg_patch.c(418),ERROR" ID="0xa0720d12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] read_page_status: cannot read status, err_code = 0x%x @upg_patch.c(425),ERROR" ID="0xa0720d4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] write_page_status state err_code = 0x%x @upg_patch.c(439),ERROR" ID="0xa0720dba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] write_page_status: cannot read old status, err_code = 0x%x @upg_patch.c(446),ERROR" ID="0xa0720df2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[UPG] write_page_status: Trying to set bits 0-&gt;1 at offset = 0x%x, with 0x%x -&gt; 0x%x @upg_patch.c(451),INFO" ID="0xa0720e1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] write_page_status: cannot write status, err_code = 0x%x @upg_patch.c(455),ERROR" ID="0xa0720e3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] erase_fota_buffers state err_code = 0x%x @upg_patch.c(463),ERROR" ID="0xa0720e7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] erase_fota_buffers: cannot erase the fota buffers, err_code = 0x%x @upg_patch.c(471),ERROR" ID="0xa0720eba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] erase_image_flash_page state err_code = 0x%x @upg_patch.c(479),ERROR" ID="0xa0720efa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] read_byte state err_code = 0x%x @upg_patch.c(486),ERROR" ID="0xa0720f32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] page_write_type state err_code = 0x%x @upg_patch.c(511),ERROR" ID="0xa0720ffa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] STANDARD A @upg_patch.c(519),INFO" ID="0xa072103d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] STANDARD B @upg_patch.c(525),INFO" ID="0xa072106d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] PARTIAL_START @upg_patch.c(530),INFO" ID="0xa0721095" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] write_flash_page_skip_done state error @upg_patch.c(539),ERROR" ID="0xa07210da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] Skipping! page = 0x%x @upg_patch.c(550),INFO" ID="0xa0721135" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[UPG]   type = 0x%x permitted = 0x%x (first = 0x%x last = 0x%x) @upg_patch.c(552),INFO" ID="0xa0721145" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] Corrupt flash! We have written valid pages, but now we're back to skipping! @upg_patch.c(554),ERROR" ID="0xa0721152" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[UPG] Corrupt flash!Page write bits are not as expected.page = 0x%x, status = 0x%x @upg_patch.c(560),ERROR" ID="0xa0721182" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] write_byte state err_code = 0x%x @upg_patch.c(597),ERROR" ID="0xa07212aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] read_byte state err_code = 0x%x @upg_patch.c(621),ERROR" ID="0xa072136a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] finish_write state err_code = 0x%x @upg_patch.c(640),ERROR" ID="0xa0721402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] Corrupt patch 4, err_code = 0x%x @upg_patch.c(660),ERROR" ID="0xa07214a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] Corrupt patch 4a, err_code = 0x%x @upg_patch.c(665),ERROR" ID="0xa07214ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] NCkA @upg_patch.c(671),INFO" ID="0xa07214fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] RCkB @upg_patch.c(673),INFO" ID="0xa072150d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] NCkC @upg_patch.c(677),INFO" ID="0xa072152d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] RCkD @upg_patch.c(679),INFO" ID="0xa072153d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] Corrupt patch 3a (data exhausted), err_code = 0x%x @upg_patch.c(700),ERROR" ID="0xa07215e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] Corrupt patch 3b (not magic number), err_code = 0x%x @upg_patch.c(705),ERROR" ID="0xa072160a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] malloc failure, err_code = 0x%x @upg_patch.c(788),ERROR" ID="0xa07218a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] Corrupt patch 5 (data exhausted), err_code = 0x%x @upg_patch.c(800),ERROR" ID="0xa0721902" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] apply_patch b state err_code = 0x%x @upg_patch.c(843),ERROR" ID="0xa0721a5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] Corrupt patch 6, err_code = 0x%x @upg_patch.c(853),ERROR" ID="0xa0721aaa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] malloc failure, err_code = 0x%x @upg_patch.c(911),ERROR" ID="0xa0721c7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] Corrupt patch 7a (data exhausted), err_code = 0x%x @upg_patch.c(920),ERROR" ID="0xa0721cc2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[UPG] Corrupt patch 7, returned(data corrupted) = 0x%x, err_code = 0x%x @upg_patch.c(926),ERROR" ID="0xa0721cf2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] apply_patch c state err_code = 0x%x @upg_patch.c(960),ERROR" ID="0xa0721e02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] Corrupt patch 8 (overran destination), err_code = 0x%x @upg_patch.c(970),ERROR" ID="0xa0721e52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] Corrupt patch 9 (overran source), err_code = 0x%x @upg_patch.c(975),ERROR" ID="0xa0721e7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] apply_patch state error @upg_patch.c(987),ERROR" ID="0xa0721eda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] aps.zcontext init state err_code = 0x%x @upg_patch.c(994),ERROR" ID="0xa0721f12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] local_buffer malloc error @upg_patch.c(1048),ERROR" ID="0xa07220c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] Starting patching process @upg_patch.c(1061),INFO" ID="0xa072212d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] desc-&gt;bottom_up = 0x%x @upg_patch.c(1062),INFO" ID="0xa0722135" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] desc-&gt;buffers_flash_offset = 0x%x @upg_patch.c(1063),INFO" ID="0xa072213d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] desc-&gt;buffers_length = 0x%x @upg_patch.c(1064),INFO" ID="0xa0722145" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] desc-&gt;failpoint = 0x%x @upg_patch.c(1065),INFO" ID="0xa072214d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] desc-&gt;image_flash_offset = 0x%x @upg_patch.c(1066),INFO" ID="0xa0722155" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] desc-&gt;maxsize = 0x%x @upg_patch.c(1067),INFO" ID="0xa072215d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] desc-&gt;newsize = 0x%x @upg_patch.c(1068),INFO" ID="0xa0722165" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] desc-&gt;oldsize = 0x%x @upg_patch.c(1069),INFO" ID="0xa072216d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] desc-&gt;patch_contents_flash_offset = 0x%x @upg_patch.c(1070),INFO" ID="0xa0722175" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] desc-&gt;patch_contents_len = 0x%x @upg_patch.c(1071),INFO" ID="0xa072217d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] Corrupt flash recovery - we can't have more than one page in progress!!! @upg_patch.c(1080),ERROR" ID="0xa07221c2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[UPG]     page = 0x%x, bit = 0x%x, err_code = 0x%x @upg_patch.c(1082),ERROR" ID="0xa07221d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] err_code = 0x%x @upg_patch.c(1088),ERROR" ID="0xa0722202" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] process_patch read_page_buffer err_code = 0x%x @upg_patch.c(1094),ERROR" ID="0xa0722232" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] process_patch - caching recovery flash failure err_code = 0x%x @upg_patch.c(1143),ERROR" ID="0xa07223ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] process_patch state err_code = 0x%x @upg_patch.c(1150),ERROR" ID="0xa07223f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] No buffer page required recovery. @upg_patch.c(1155),INFO" ID="0xa072241d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] (This implies that the failure must have occurred @upg_patch.c(1156),INFO" ID="0xa0722425" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] while writing to the buffer, not while erasing or writing the target flash. @upg_patch.c(1157),INFO" ID="0xa072242d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] Ready to continue patching @upg_patch.c(1159),INFO" ID="0xa072243d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] Recovery complete @upg_patch.c(1161),INFO" ID="0xa072244d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] process_patch - caching flash failure err_code = 0x%x @upg_patch.c(1184),ERROR" ID="0xa0722502" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] task_apply_code_diff image is NULL @upg_patch.c(1248),ERROR" ID="0xa0722702" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] patch *desc malloc failed @upg_patch.c(1254),ERROR" ID="0xa0722732" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] fota_pkg_task_apply_code_diff get area addr faile, ret = 0x%x @upg_patch.c(1268),ERROR" ID="0xa07227a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_hash_table fail @upg_process.c(44),ERROR" ID="0xa0740162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_header fail @upg_process.c(59),ERROR" ID="0xa07401da" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[UPG] package info total= 0x%x, finished = 0x%x @upg_process.c(75),INFO" ID="0xa074025d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] image decompress_flag: 0x%x @upg_process.c(92),INFO" ID="0xa07402e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] decompress upg @upg_process.c(95),INFO" ID="0xa07402fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] diff upg @upg_process.c(105),INFO" ID="0xa074034d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] full upg @upg_process.c(109),INFO" ID="0xa074036d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_flash_erase_metadata_pages fail. @upg_process.c(148),ERROR" ID="0xa07404a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] switch status = 0x%x @upg_process.c(177),INFO" ID="0xa074058d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] The image has finished. image_id = 0x%x @upg_process.c(237),INFO" ID="0xa074076d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_header fail. @upg_process.c(244),ERROR" ID="0xa07407a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_set_firmware_update_status fail @upg_process.c(253),ERROR" ID="0xa07407ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] start perform update image : 0x%x @upg_process.c(256),INFO" ID="0xa0740805" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] perform update image over. ret = 0x%x @upg_process.c(258),INFO" ID="0xa0740815" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] start perform NV image : 0x%x @upg_process.c(264),INFO" ID="0xa0740845" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] perform NV image over. ret = 0x%x @upg_process.c(266),INFO" ID="0xa0740855" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] update image number = 0x%x @upg_process.c(286),INFO" ID="0xa07408f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] update firmware number = 0x%x @upg_process.c(287),INFO" ID="0xa07408fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_hash_table fail @upg_process.c(297),ERROR" ID="0xa074094a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_process_update_image_tasks fail, ret = 0x%x @upg_process.c(303),ERROR" ID="0xa074097a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] Not need to upgrade... @upg_process.c(346),ERROR" ID="0xa0740ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_package_header fail @upg_process.c(353),ERROR" ID="0xa0740b0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] open %s fail! @upg_process.c(433),ERROR" ID="0xa0740d8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] seek file fail! @upg_process.c(440),ERROR" ID="0xa0740dc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] write file fail! @upg_process.c(452),ERROR" ID="0xa0740e22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] decompress resource file @upg_resource.c(80),INFO" ID="0xa0760285" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] full resource file @upg_resource.c(84),INFO" ID="0xa07602a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] delete resource file @upg_resource.c(91),INFO" ID="0xa07602dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] remove resource dir @upg_resource.c(94),INFO" ID="0xa07602f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] resource index decompress_flag: 0x%x @upg_resource.c(152),INFO" ID="0xa07604c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] decompress upg @upg_resource.c(155),INFO" ID="0xa07604dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] full upg @upg_resource.c(159),INFO" ID="0xa07604fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_resource_process_node fail ret = 0x%x @upg_resource.c(206),ERROR" ID="0xa0760672" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_hash_table fail @upg_storage.c(223),ERROR" ID="0xa07a06fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_package_header fail @upg_storage.c(279),ERROR" ID="0xa07a08ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] uapi_upg_verify_file fail, ret = 0x%x @upg_storage.c(287),ERROR" ID="0xa07a08fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_get_firmware_number_in_package fail, ret = 0x%x @upg_storage.c(295),ERROR" ID="0xa07a093a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_upgrade_request fail. ret = 0x%x @upg_storage.c(303),ERROR" ID="0xa07a097a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] set file error : %d @upg_storage.c(341),ERROR" ID="0xa07a0aaa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[UPG] app size is not enough! app_size = 0x%x, decompress_len = 0x%x @upg_upgrade.c(46),ERROR" ID="0xa0780172" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_lzma_decode fail ret = 0x%x @upg_upgrade.c(53),ERROR" ID="0xa07801aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_verify_hash: memcmp hash fail. @upg_verify.c(70),ERROR" ID="0xa06e0232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="upg_verify_hash: memcmp hash fail. @upg_verify.c(87),ERROR" ID="0xa06e02ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="upg_verify_hash image table OK @upg_verify.c(91),ERROR" ID="0xa06e02da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] hash_operation fail, no support hash_type = 0x%x @upg_verify.c(107),ERROR" ID="0xa06e035a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] hash_operation: drv_rom_cipher_hash fail ret_val = 0x%x @upg_verify.c(111),ERROR" ID="0xa06e037a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] uapi_drv_cipher_hash_start fail ret = 0x%x @upg_verify.c(118),ERROR" ID="0xa06e03b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] uapi_drv_cipher_hash_update fail ret = 0x%x @upg_verify.c(128),ERROR" ID="0xa06e0402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_verify_hash: hash_operation fail ret_val = 0x%x @upg_verify.c(155),ERROR" ID="0xa06e04da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_verify_hash: memcmp hash fail. @upg_verify.c(161),ERROR" ID="0xa06e050a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] sm3 calc_hash fail ret = 0x%x @upg_verify.c(218),ERROR" ID="0xa06e06d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] calc_hash fail ret = 0x%x @upg_verify.c(230),ERROR" ID="0xa06e0732" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] sha 256 calc_hash fail ret = 0x%x @upg_verify.c(254),ERROR" ID="0xa06e07f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] calc_hash fail ret = 0x%x @upg_verify.c(261),ERROR" ID="0xa06e082a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] calc_hash fail ret = 0x%x @upg_verify.c(291),ERROR" ID="0xa06e091a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] uapi_drv_cipher_pke_rsa_verify fail ret = 0x%x @upg_verify.c(310),ERROR" ID="0xa06e09b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] verify_signature success @upg_verify.c(314),INFO" ID="0xa06e09d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] verify_signature is fail, ret = 0x%x @upg_verify.c(337),ERROR" ID="0xa06e0a8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] verify_fota_key_area -&gt; verify SHA256 @upg_verify.c(347),INFO" ID="0xa06e0add" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] verify_fota_key_area -&gt; verify signed @upg_verify.c(351),INFO" ID="0xa06e0afd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] verify_signature is fail, ret = 0x%x @upg_verify.c(382),ERROR" ID="0xa06e0bf2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] verify_fota_info -&gt; verify SHA256 @upg_verify.c(404),INFO" ID="0xa06e0ca5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] verify_fota_info -&gt; verify signed @upg_verify.c(412),INFO" ID="0xa06e0ce5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg verify: image ID error @upg_verify.c(465),ERROR" ID="0xa06e0e8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg verify: key area error. ret = 0x%x @upg_verify.c(472),ERROR" ID="0xa06e0ec2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg verify: fota info error. ret = 0x%x @upg_verify.c(479),ERROR" ID="0xa06e0efa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg verify: upg_check_fota_information. ret = 0x%x @upg_verify.c(485),ERROR" ID="0xa06e0f2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_header fail @upg_verify.c(506),ERROR" ID="0xa06e0fd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg verify head OK @upg_verify.c(555),INFO" ID="0xa06e115d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_hash_table fail @upg_verify.c(559),ERROR" ID="0xa06e117a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_verify_hash image table OK @upg_verify.c(573),INFO" ID="0xa06e11ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] uapi_drv_cipher_hash_start fail @upg_verify.c(598),ERROR" ID="0xa06e12b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] uapi_drv_cipher_hash_start fail @upg_verify.c(710),ERROR" ID="0xa06e1632" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg verify: file image check error. header_magic = 0x%x @upg_verify.c(764),ERROR" ID="0xa06e17e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg verify: image check OK. image_id = 0x%x @upg_verify.c(794),INFO" ID="0xa06e18d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg verify: image ID error @upg_verify.c(812),ERROR" ID="0xa06e1962" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg verify: fota info error. ret = 0x%x @upg_verify.c(819),ERROR" ID="0xa06e199a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_hash_table fail @upg_verify.c(825),ERROR" ID="0xa06e19ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg verify: verify hash table failed. ret = 0x%x @upg_verify.c(837),ERROR" ID="0xa06e1a2a" />
+			</MSG_LOG><LAYER_LOG>
+        </LAYER_LOG>
+        <USERPLANE_LOG>
+        </USERPLANE_LOG>
+    </SUBSYSTEM>
+    <SUBSYSTEM NAME="dsp_core" DATA_STRUCT_FILE="..\diag\prot_core_hso_msg_struct_def.txt" DESCRIPTION="" MULTIMODE="dsp_core">
+        <MSG_LOG>
+        </MSG_LOG>
+        <LAYER_LOG>
+        </LAYER_LOG>
+        <USERPLANE_LOG>
+        </USERPLANE_LOG>
+    </SUBSYSTEM>
+    <SUBSYSTEM NAME="apps_core" DATA_STRUCT_FILE="..\diag\apps_core_hso_msg_struct_def.txt" DESCRIPTION="" MULTIMODE="apps_core">
+        <MSG_LOG>
+        </MSG_LOG>
+        <LAYER_LOG>
+        </LAYER_LOG>
+        <USERPLANE_LOG>
+        </USERPLANE_LOG>
+    </SUBSYSTEM>
+    <SUBSYSTEM NAME="prot_core" DATA_STRUCT_FILE="..\diag\prot_core_hso_msg_struct_def.txt" DESCRIPTION="" MULTIMODE="prot_core">
+        <MSG_LOG>
+        </MSG_LOG>
+        <LAYER_LOG>
+        </LAYER_LOG>
+        <USERPLANE_LOG>
+        </USERPLANE_LOG>
+    </SUBSYSTEM>
+    <SUBSYSTEM NAME="ota_msg" DATA_STRUCT_FILE="..\diag\fix_struct_def.txt" DESCRIPTION="" MULTIMODE="ota_msg">
+        <MSG_LOG><MSG NAME="OTA_BT_LMP_NAME_REQ" ID="0x21000" />
+			<MSG NAME="OTA_BT_LMP_NAME_RES" ID="0x21001" />
+			<MSG NAME="OTA_BT_LMP_FEATURE_REQ" ID="0x21002" />
+			<MSG NAME="OTA_BT_LMP_FEATURE_RES" ID="0x21003" />
+			<MSG NAME="OTA_BT_LMP_PDU_TX" ID="0x21004" />
+			<MSG NAME="OTA_BT_LMP_PDU_RX" ID="0x21005" />
+			<MSG NAME="OTA_BT_RW_CS_STRU" ID="0x21006" />
+			<MSG NAME="OTA_BT_EX_TAB" ID="0x21007" />
+			<MSG NAME="OTA_BT_KE_QUEUE" ID="0x21008" />
+			<MSG NAME="OTA_BT_KE_QUEUE" ID="0x21009" />
+			<MSG NAME="OTA_BT_LD_ENV_STRU" ID="0x2100a" />
+			<MSG NAME="OTA_BT_RWBT_ENV_STRU" ID="0x2100b" />
+			<MSG NAME="OTA_BT_AFH_CHNL_STAT" ID="0x2100c" />
+			<MSG NAME="OTA_BT_ACL_RX_LINK_STAT" ID="0x2100d" />
+			<MSG NAME="OTA_BT_SCO_STAT" ID="0x2100e" />
+			<MSG NAME="OTA_BT_RSSI_STAT" ID="0x2100f" />
+			<MSG NAME="OTA_BT_ACL_TX_STAT" ID="0x21010" />
+			<MSG NAME="OTA_BT_SLEEP_STAT" ID="0x21011" />
+			<MSG NAME="OTA_BT_GET_BT_EXT_CS" ID="0x21012" />
+			<MSG NAME="OTA_BT_GET_BLE_EXT_CS" ID="0x21013" />
+			<MSG NAME="OTA_BT_READ_BT_REG" ID="0x21014" />
+			<MSG NAME="OTA_BT_READ_BLE_REG" ID="0x21015" />
+			<MSG NAME="OTA_BT_CHNLSCAN_REPORT" ID="0x21016" />
+			<MSG NAME="OTA_BT_CHNLSCAN_DATA" ID="0x21017" />
+			<MSG NAME="OTA_BT_CHNLSCAN_RSSI" ID="0x21018" />
+			<MSG NAME="OTA_BT_CHNLSCAN_DUTYCYCYLE" ID="0x21019" />
+			<MSG NAME="OTA_EA_ELT_TAG" ID="0x2101b" />
+			</MSG_LOG><LAYER_LOG>
+        </LAYER_LOG>
+        <USERPLANE_LOG>
+        </USERPLANE_LOG>
+    </SUBSYSTEM>
+    <SUBSYSTEM NAME="fix_msg" DATA_STRUCT_FILE="..\diag\fix_struct_def.txt" DESCRIPTION="" MULTIMODE="fix_msg">
+        <MSG_LOG>
+            
+            <MSG NAME="EXCEPTION_LAST_RUN_INFO" ID="0x100003" />
+        </MSG_LOG>
+        <LAYER_LOG>
+        </LAYER_LOG>
+        <USERPLANE_LOG>
+        </USERPLANE_LOG>
+    </SUBSYSTEM>
+</MSS>

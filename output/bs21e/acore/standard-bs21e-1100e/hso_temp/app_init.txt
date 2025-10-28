@@ -1,0 +1,1 @@
+,E:/xingshan/bearpi-pico_h2821e-master/middleware/chips/bs2x/dfx/include/log_def_bt.h,E:/xingshan/bearpi-pico_h2821e-master/middleware/chips/bs2x/dfx/include/log_def_dsp.h,E:/xingshan/bearpi-pico_h2821e-master/middleware/chips/bs2x/dfx/include/log_def_pf.h####E:/xingshan/bearpi-pico_h2821e-master/middleware/utils/app_init/app_init.c

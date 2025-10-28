@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_lzma_alloc failed!!! size = 0x%x @upg_lzmadec.c(28),ERROR" ID="0xa07000e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_encry_fota_pkt fail ret = 0x%x  @upg_lzmadec.c(225),ERROR" ID="0xa070070a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] lzmadec_decodetobuf fail ret = 0x%x.  @upg_lzmadec.c(249),ERROR" ID="0xa07007ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_lzma_write_image fail. @upg_lzmadec.c(260),ERROR" ID="0xa0700822" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_lzma_read_pkt_decry fail ret = 0x%x. @upg_lzmadec.c(282),ERROR" ID="0xa07008d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_lzma_decode_to_buf fail ret = 0x%x. @upg_lzmadec.c(289),ERROR" ID="0xa070090a" />
+			</MSG_LOG>

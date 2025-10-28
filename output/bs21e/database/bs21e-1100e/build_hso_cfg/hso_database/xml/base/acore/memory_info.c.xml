@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg5" NAME="[STACK] id:%d, top:0x%x, size:0x%x, task usage peak:0x%x, sp:0x%x @memory_info.c(59),INFO" ID="0xa06401dd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HEAP_STAT1] total:0x%x, used:0x%x, free:0x%x, usage waterline:0x%x @memory_info.c(79),INFO" ID="0xa064027d" />
+			</MSG_LOG>

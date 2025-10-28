@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[UPG] decompress resource file @upg_resource.c(80),INFO" ID="0xa0760285" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] full resource file @upg_resource.c(84),INFO" ID="0xa07602a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] delete resource file @upg_resource.c(91),INFO" ID="0xa07602dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] remove resource dir @upg_resource.c(94),INFO" ID="0xa07602f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] resource index decompress_flag: 0x%x @upg_resource.c(152),INFO" ID="0xa07604c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] decompress upg @upg_resource.c(155),INFO" ID="0xa07604dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] full upg @upg_resource.c(159),INFO" ID="0xa07604fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_resource_process_node fail ret = 0x%x @upg_resource.c(206),ERROR" ID="0xa0760672" />
+			</MSG_LOG>

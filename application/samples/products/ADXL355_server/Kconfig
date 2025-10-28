@@ -1,0 +1,57 @@
+config SUPPORT_ADXL355_I2C
+    bool
+    prompt "Support ADXL355 I2C."
+    default y
+    depends on SAMPLE_SUPPORT_SLE_ADXL355
+    help
+        This option means support ADXL355 I2C server.
+
+config I2C_MASTER_BUS_ID
+    int
+    prompt "Choose I2C master bus id."
+    depends on SUPPORT_ADXL355_I2C
+    default 0
+
+config I2C_SCL_MASTER_PIN
+    int
+    prompt "Choose I2C SCL master pin."
+    depends on SUPPORT_ADXL355_I2C
+    default 18
+
+config I2C_SDA_MASTER_PIN
+    int
+    prompt "Choose I2C SDA master pin."
+    depends on SUPPORT_ADXL355_I2C
+    default 17
+
+config ADXL355_DRDY_PIN
+    int
+    prompt "Choose ADXL355_DRDY pin."
+    depends on SUPPORT_ADXL355_I2C
+    default 16
+
+config I2C_TRANSFER_LEN
+    int
+    prompt "Choose I2C transfer length."
+    depends on SUPPORT_ADXL355_I2C
+    default 8
+
+config SLE_UART_BUS
+    int
+    prompt "Set the UART BUS of the currrent sample."
+    default 0
+    depends on SUPPORT_ADXL355_I2C
+    help
+        This option means the UART BUS of the currrent sample.
+
+config UART_TXD_PIN
+    int
+    prompt "Choose UART TXD pin."
+    depends on SUPPORT_ADXL355_I2C
+    default 19
+
+config UART_RXD_PIN
+    int
+    prompt "Choose UART RXD pin."
+    depends on SUPPORT_ADXL355_I2C
+    default 20

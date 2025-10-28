@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_hash_table fail @upg_process.c(44),ERROR" ID="0xa0740162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_header fail @upg_process.c(59),ERROR" ID="0xa07401da" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[UPG] package info total= 0x%x, finished = 0x%x @upg_process.c(75),INFO" ID="0xa074025d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] image decompress_flag: 0x%x @upg_process.c(92),INFO" ID="0xa07402e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] decompress upg @upg_process.c(95),INFO" ID="0xa07402fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] diff upg @upg_process.c(105),INFO" ID="0xa074034d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] full upg @upg_process.c(109),INFO" ID="0xa074036d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_flash_erase_metadata_pages fail. @upg_process.c(148),ERROR" ID="0xa07404a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] switch status = 0x%x @upg_process.c(177),INFO" ID="0xa074058d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] The image has finished. image_id = 0x%x @upg_process.c(237),INFO" ID="0xa074076d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_header fail. @upg_process.c(244),ERROR" ID="0xa07407a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_set_firmware_update_status fail @upg_process.c(253),ERROR" ID="0xa07407ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] start perform update image : 0x%x @upg_process.c(256),INFO" ID="0xa0740805" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] perform update image over. ret = 0x%x @upg_process.c(258),INFO" ID="0xa0740815" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] start perform NV image : 0x%x @upg_process.c(264),INFO" ID="0xa0740845" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] perform NV image over. ret = 0x%x @upg_process.c(266),INFO" ID="0xa0740855" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] update image number = 0x%x @upg_process.c(286),INFO" ID="0xa07408f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] update firmware number = 0x%x @upg_process.c(287),INFO" ID="0xa07408fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_pkg_image_hash_table fail @upg_process.c(297),ERROR" ID="0xa074094a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] upg_process_update_image_tasks fail, ret = 0x%x @upg_process.c(303),ERROR" ID="0xa074097a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] Not need to upgrade... @upg_process.c(346),ERROR" ID="0xa0740ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] upg_get_package_header fail @upg_process.c(353),ERROR" ID="0xa0740b0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[UPG] open %s fail! @upg_process.c(433),ERROR" ID="0xa0740d8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] seek file fail! @upg_process.c(440),ERROR" ID="0xa0740dc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[UPG] write file fail! @upg_process.c(452),ERROR" ID="0xa0740e22" />
+			</MSG_LOG>
