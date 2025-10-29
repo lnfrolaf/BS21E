@@ -6,6 +6,9 @@
  *
  */
 
+// Version : 2.3
+// use g_sample_counter instead of transmission counter
+
 /*============================================================================*/
 /*============================= Include Headers ==============================*/
 /*============================================================================*/
@@ -46,7 +49,7 @@
 /*============================================================================*/
 
 // --- 设备MAC地址配置 ---
-#define SERVER_MAC_ADDRESS              { 0x11, 0x22, 0x33, 0x44, 0x55, 0x05 }
+#define SERVER_MAC_ADDRESS              { 0x11, 0x22, 0x33, 0x44, 0x55, 0x09 }
 
 // --- Task & System Configuration ---
 #define ADXL355_SERVER_TASK_STACK_SIZE    0x2000  // Main task stack
@@ -577,6 +580,9 @@ void dequeue_and_send_sensor_data(void) {
         }
         g_debut+= g_sample_counter-samples_available; // NEW: Update total transmission sessions
         // osal_printk("%s Buffer wrap-around detected. Head: %u, Tail: %u, Samples: %u, debut: %u\r\n", SLE_SERVER_LOG, head, tail, g_sample_counter, g_debut);
+        
+        sle_uart_server_send_transmission_count((uint32_t)g_sample_counter);
+        osal_msleep(10);
         g_sample_counter = 0; // Reset counter
 
         total_bytes_to_send = samples_available * SENSOR_SAMPLE_SIZE_BYTES;
@@ -613,8 +619,6 @@ void dequeue_and_send_sensor_data(void) {
     // MODIFIED: Send status and transmission count over separate characteristics
     uint8_t current_status = (total_bytes_to_send > 0) ? DEVICE_STATUS_HAS_DATA : DEVICE_STATUS_NO_DATA;
     sle_uart_server_send_status_report(current_status);
-    osal_msleep(10);
-    sle_uart_server_send_transmission_count((uint32_t)g_sample_counter);
     osal_msleep(10);
 
     if (total_bytes_to_send > 0) {
