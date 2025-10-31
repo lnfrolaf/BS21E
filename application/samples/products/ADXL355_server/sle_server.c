@@ -49,7 +49,7 @@
 /*============================================================================*/
 
 // --- 设备MAC地址配置 ---
-#define SERVER_MAC_ADDRESS              { 0x11, 0x22, 0x33, 0x44, 0x55, 0x09 }
+#define SERVER_MAC_ADDRESS              { 0x11, 0x22, 0x33, 0x44, 0x55, 0x08 }
 
 // --- Task & System Configuration ---
 #define ADXL355_SERVER_TASK_STACK_SIZE    0x2000  // Main task stack
@@ -208,7 +208,7 @@ static void *data_sending_task(void *arg);
 static void dequeue_and_send_sensor_data(void);
 static errcode_t sle_uart_server_send_report_by_handle(const uint8_t *data, uint16_t len);
 static errcode_t sle_uart_server_send_status_report(uint8_t status);
-static errcode_t sle_uart_server_send_transmission_count(uint8_t count); // NEW
+// static errcode_t sle_uart_server_send_transmission_count(uint8_t count); // NEW
 void adxl355_drdy_cb(pin_t pin, uintptr_t param);
 
 
@@ -261,17 +261,31 @@ static void ADXL355_Startup(void)
     ADXL355_WriteRegister(ADXL355_POWER_CTL, pwr);
 }
 
+// static int16_t ADXL355_Convert(uint32_t raw)
+// {
+//     int32_t signed_20_bit_val;
+//     raw = (raw >> 4) & 0x000FFFFF;
+
+//     if (raw & 0x00080000) {
+//         signed_20_bit_val = (int32_t)(raw | 0xFFF00000);
+//     } else {
+//         signed_20_bit_val = (int32_t)raw;
+//     }
+//     return (int16_t)(signed_20_bit_val >> 4);
+// }
+
 static int16_t ADXL355_Convert(uint32_t raw)
 {
-    int32_t signed_20_bit_val;
-    raw = (raw >> 4) & 0x000FFFFF;
-
-    if (raw & 0x00080000) {
-        signed_20_bit_val = (int32_t)(raw | 0xFFF00000);
+    uint32_t raw_20bit = (raw >> 4) & 0x000FFFFF;
+    uint32_t sign_bit_component = raw_20bit & 0x00080000;
+    uint32_t lower_15_bits = raw_20bit & 0x00007FFF;
+    uint32_t new_sign_bit = sign_bit_component >> 4;
+    uint32_t combined_16bit = new_sign_bit | lower_15_bits;
+    if (combined_16bit & 0x8000) {
+        return (int16_t)(combined_16bit | 0xFFFF0000);
     } else {
-        signed_20_bit_val = (int32_t)raw;
+        return (int16_t)combined_16bit;
     }
-    return (int16_t)(signed_20_bit_val >> 4);
 }
 
 static void ADXL355_ReadData(void)
@@ -581,8 +595,8 @@ void dequeue_and_send_sensor_data(void) {
         g_debut+= g_sample_counter-samples_available; // NEW: Update total transmission sessions
         // osal_printk("%s Buffer wrap-around detected. Head: %u, Tail: %u, Samples: %u, debut: %u\r\n", SLE_SERVER_LOG, head, tail, g_sample_counter, g_debut);
         
-        sle_uart_server_send_transmission_count((uint32_t)g_sample_counter);
-        osal_msleep(10);
+        // sle_uart_server_send_transmission_count((uint32_t)g_sample_counter);
+        // osal_msleep(10);
         g_sample_counter = 0; // Reset counter
 
         total_bytes_to_send = samples_available * SENSOR_SAMPLE_SIZE_BYTES;
@@ -948,16 +962,16 @@ static errcode_t sle_uart_server_send_status_report(uint8_t status)
     return ssaps_notify_indicate(g_server_id, g_sle_conn_hdl, &param);
 }
 
-// NEW function to send transmission count
-static errcode_t sle_uart_server_send_transmission_count(uint8_t count)
-{
-    ssaps_ntf_ind_t param = {0};
-    param.handle = g_tx_count_property_handle;
-    param.type = SSAP_PROPERTY_TYPE_VALUE;
-    param.value = &count;
-    param.value_len = 1;
-    return ssaps_notify_indicate(g_server_id, g_sle_conn_hdl, &param);
-}
+// // NEW function to send transmission count
+// static errcode_t sle_uart_server_send_transmission_count(uint8_t count)
+// {
+//     ssaps_ntf_ind_t param = {0};
+//     param.handle = g_tx_count_property_handle;
+//     param.type = SSAP_PROPERTY_TYPE_VALUE;
+//     param.value = &count;
+//     param.value_len = 1;
+//     return ssaps_notify_indicate(g_server_id, g_sle_conn_hdl, &param);
+// }
 
 static void *sle_uart_server_task(void *arg)
 {
